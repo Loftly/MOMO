@@ -1,0 +1,33 @@
+body{
+    --theme-color: #08B236;
+    --theme-secondary: #101511;
+    --header-height: 60px;
+
+    --header-font-1: 30px;
+
+    --text-font-size-l: 20px;
+
+    --section-margins: 60px 0;
+
+    --disclaimer-height: 120px;
+
+    font-family: 'Borel', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    margin: auto;
+    color: white;
+    background-color: black;
+}
+
+.section{
+    margin: var(--section-margins);
+}
+
+.sectionTitle{
+    font-size: 40px;
+    text-align: center;
+}
+
+.invisible{
+    display: none;
+}
