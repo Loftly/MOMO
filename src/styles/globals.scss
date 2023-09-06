@@ -1,13 +1,13 @@
 body{
     --theme-color: #08B236;
     --theme-secondary: #101511;
-    --header-height: 60px;
+    --header-height: 80px;
 
     --header-font-1: 30px;
 
     --text-font-size-l: 20px;
 
-    --section-margins: 60px 0;
+    --section-margins: 60px auto;
 
     --disclaimer-height: 120px;
 
@@ -20,7 +20,7 @@ body{
 }
 
 .section{
-    margin: var(--section-margins);
+    display: flex;
 }
 
 .sectionTitle{
@@ -28,6 +28,38 @@ body{
     text-align: center;
 }
 
+.Content{
+    display: flex;
+    flex-direction: column;
+    width: calc(50vw - 85px);
+    margin: var(--header-height);
+    margin-right: 100px
+}
+
 .invisible{
     display: none;
 }
+
+.Background{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img{
+        width: calc(50vw - 5px);
+        height: auto;
+        filter: opacity(0.5)
+    }
+}
+
+.left{
+    flex-direction: row-reverse;
+
+    .content{
+        
+    }
+}
+
+::-webkit-scrollbar { width: 10px }
+
+::-webkit-scrollbar-thumb { background: #777 }

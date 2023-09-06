@@ -1,0 +1,50 @@
+.container{
+    position: fixed;
+    width: 100%;
+    background-color: var(--theme-secondary);
+    height: var(--header-height);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+    .content{
+        margin: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .avatar{
+            margin-left: 20px;
+            font-size: var(--header-font-1);
+        }
+    
+        .navBar{
+            display: flex;
+            margin-right: 20px;
+            
+            a{
+                text-decoration: none;
+    
+                &:focus{
+                    outline: none;
+                    text-decoration: none;
+                }
+            }
+    
+            nav{
+                font-size: var(--header-font-1);
+                margin: 0 15px;
+                cursor: pointer;
+                color: white;
+                padding: 5px;
+            }
+    
+            .link{
+                border: 1px solid white;
+                padding: 5px 15px;
+                border-radius: 2rem;
+            }
+        }
+    }
+}

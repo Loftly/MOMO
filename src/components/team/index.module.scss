@@ -1,0 +1,52 @@
+.teamContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 40px;
+
+    .memberCard{
+        margin-bottom: 60px;
+        min-width: 50%;
+        width: fit-content;
+
+        .header{
+            .title{
+                font-size: 28px;
+            }
+            .subTitle{
+                margin-top: 4px;
+            }
+        }
+        
+        .body{
+            margin-top: 20px;
+    
+            .contactDetail{
+                margin: 10px 0;
+                font-size: 20px;
+                padding: 4px 0;
+    
+                span{
+                    margin-left: 10px;
+                }
+
+                a{
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        border-bottom: 1px solid white;
+    }
+
+    .links{
+        a{
+            font-size: 50px;
+            color: white;
+            margin: 0 25px;
+        }
+
+    }
+}

@@ -1,0 +1,41 @@
+$borderStyle: solid;
+
+.container{
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-top: 1px $borderStyle white;
+
+        .cardContainer{
+            border-bottom: 1px $borderStyle white;            
+            padding: 20px 10px;
+            text-align: center;
+
+            .title{
+                font-size: 28px;
+                margin: 0 0 25px 0;
+            }
+
+            .description{
+                overflow-y: hidden;
+                font-size: 16px;
+                width: 70%;
+                margin: auto;
+                line-height: 28px;
+
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.borderLeft{
+    border-left: 1px $borderStyle white;
+}
+
+.borderRight{
+    border-right: 1px $borderStyle white;
+}
