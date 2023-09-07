@@ -8,8 +8,7 @@ export default function Tokenomics(){
         </div>
         <div className='Content'>
             <h1 className='sectionTitle'>Tokenomics</h1>
-            <div className={Styles.content}>
-            </div>
+            <div className={Styles.content}></div>
         </div>
     </div>
 }

@@ -1,8 +1,6 @@
 import Styles from './index.module.scss'
 
-const about = <p>
-    {/*Enter About text here*/}    
-</p>
+const about = null
 
 
 export default function About(){

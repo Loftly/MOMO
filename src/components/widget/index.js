@@ -11,7 +11,7 @@ export default function Widget(){
         <div className='Content'>
             <h1 className='sectionTitle'>Check it out!</h1>
             <div className={Styles.content}>
-                <SwapWidget width={'500px'} theme={darkTheme}/>
+                <SwapWidget width={'500px'} theme={darkTheme} />
             </div>
         </div>
     </div>
