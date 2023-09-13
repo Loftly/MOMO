@@ -4,8 +4,8 @@ const phases = [
     {
         title: "Phase One",
         objectives: [
-            "Launch Token",
-            "Social Media and Website Creation",
+            "Assemble a community of space enthusiasts, tech aficionados, and crypto believers.",
+            "Launch the $MOMO token with unique tokenomics, ensuring fair distribution and a solid foundation.",
             "Get trending on X through mischevious memery and marketing tactics",
             "1000+ holders"
         ]
@@ -13,22 +13,21 @@ const phases = [
     {
         title: "Phase Two",
         objectives: [
-            "Community Partnerships",
-            "Trending on DexTools, CoinMarketCap etc",
-            "Cross Chain Compatability/ Establish a DAO",
-            "20000+ holders",
-            "Merch/ NFT Deployment"
+            "Achieve our first major market cap milestone, proving the strength and conviction of the Martian community.",
+            "Roll out updates and tweaks based on community feedback, navigating the crypto asteroid field.",
+            "Engage in partnerships and collaborations, enhancing the $MOMO ecosystem and expanding our intergalactic network.",
+            "Introduce more incentives and reward mechanisms for holders, making the journey even more lucrative.",
+            "Aim to grab the attention of Elon and SpaceX, establishing $MOMO's narrative in the broader space narrative."
         ]
     },
     {
         title: "Phase Three",
         objectives: [
-            "Music/ AI Partnerships",
-            "S-Tier Exchange Listings",
-            "Eco- Friendly Mining Initiative/ Blockchain Education",
-            "ELON COLLAB- MORE TBA",
-            "Staking",
-            "Thematic MOMO Universe"
+            "Community Partnerships",
+            "Trending on DexTools, CoinMarketCap, etc",
+            "Cross Chain Compatability",
+            "20000+ holders",
+            "Merch/NFT Deployment, airdropped to the top 4,200 Martians"
         ]
     },
 ]
@@ -39,7 +38,7 @@ export default function About(){
             <img src='/images/AdobeStock_564469033.jpeg'/>
         </div>
         <div className={['Content', Styles.content].join(' ')}>
-            <h1 className='sectionTitle'>Our Plan</h1>
+            <h1 className='sectionTitle'>Galactic Roadmap</h1>
             {phases.map((phase, p) => (
                     <div key={p} className={Styles.phase}>
                         <div className={Styles.title}>

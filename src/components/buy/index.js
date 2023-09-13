@@ -4,16 +4,13 @@ const buyInstructions = [
     {
         title: "Create a Wallet",
         description: <>
-            Download <a href='https://metamask.io/'>MetaMask</a> or your 
-            preferred wallet using either the app store or google play store.
+            download <a href='https://metamask.io/'>MetaMask</a> or your wallet of choice from the app store or google play store for free. Desktop users, download the google chrome extension by going to metamask.io.
         </>
     },
     {
         title: "Acquire Eth",
         description: <>
-            If you no have no eth, you can buy directly on metamask, 
-            buy on other exchanges and transfer, or transfer it via 
-            a seperate wallet, and send to your self custodial wallet of choice
+            Get some ETH! Once your ETH is loaded in your wallet, you can easily swap it over to $MOMO. If you don’t have any ETH, you can buy directly on metamask, transfer from another wallet, or buy on another exchange and send it to your wallet.
         </>
     },
     {
@@ -43,7 +40,7 @@ export default function WhereToBuy(){
             <img src='/images/AdobeStock_564469050.jpeg'/>
         </div>
         <div className='Content'>
-            <h1 className='sectionTitle'>Where to Buy?</h1>
+            <h1 className='sectionTitle'>How to Buy</h1>
             <div className={Styles.content}>
                 {buyInstructions.map((buy, b) => <BuyInstructionCard 
                     key={b} 
