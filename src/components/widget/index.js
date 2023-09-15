@@ -2,9 +2,9 @@ import React from 'react';
 import Styles from './index.module.scss';
 
 export default function Widget() {
-    // Replace these with your token's and pair's addresses
+    // Token Info
     const tokenAddress = '0xBFFd4D255f9917030b1dC8843EbDAd531409c607';
-    const pairAddress = '0xYourPairAddressHere';
+    const pairAddress = 'pairaddyher';
 
     // Construct the Uniswap URL
     const uniswapUrl = `https://app.uniswap.org/#/swap?inputCurrency=${tokenAddress}&outputCurrency=${pairAddress}`;
@@ -15,7 +15,7 @@ export default function Widget() {
                 <img src='/images/AdobeStock_564468307.jpeg' alt='Background' />
             </div>
             <div className='Content'>
-                <h1 className='sectionTitle'>Check it out!</h1>
+                <h1 className='sectionTitle'>Become a Martian!</h1>
                 <div className={Styles.content}>
                     <iframe 
                         src={uniswapUrl}
