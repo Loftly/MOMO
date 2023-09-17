@@ -13,7 +13,7 @@ const links = [
     },
     {
         src: "/icons/telgrrgrgrgr.webp",
-        url: null
+        url: "https://t.me/+W6Ghi6Q1-k05MjBh"
     },
     {
         src: "/icons/uniswap_2.webp",
