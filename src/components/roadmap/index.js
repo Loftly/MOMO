@@ -33,7 +33,7 @@ const phases = [
 ]
 
 export default function About(){
-    return <div className={[Styles.container, 'section'].join(' ')}>
+    return <div className={[Styles.container, 'section'].join(' ')} id='roadmap'>
         <div className='Background'>
             <img src='/images/AdobeStock_564469033.jpeg'/>
         </div>

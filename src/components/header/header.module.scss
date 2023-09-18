@@ -17,6 +17,10 @@
         .avatar{
             margin-left: 20px;
             font-size: var(--header-font-1);
+            a {
+                text-decoration: none;
+                color: white;
+            }
         }
     
         .navBar{
