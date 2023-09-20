@@ -1,8 +1,18 @@
-.container{
-    .text{
-        p{
-            font-size: var(--text-font-size-l)
+.container {
+    display: flex;
+    justify-content: center; // Horizontally center
+    align-items: center;     // Vertically center
+    height: 100%;            // Take full height
+
+    .text {
+        text-align: center; // Center the text
+
+        p {
+            font-size: var(--text-font-size-l);
         }
     }
-}
 
+    @media (max-width: 768px) {
+        padding: 20px; // Add some padding on mobile for breathing space
+    }
+}
