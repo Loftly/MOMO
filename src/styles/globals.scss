@@ -7,7 +7,7 @@ body {
     --section-margins: 60px auto;
     --disclaimer-height: 120px;
 
-    font-family: 'Roboto', sans-serif; /* Set Roboto as the primary font */
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     margin: auto;
     color: white;
@@ -42,15 +42,15 @@ body {
 
 .Background {
     display: flex;
-    justify-content: center; /* Center the content */
+    justify-content: center;
     align-items: center;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     img {
-        width: 100%;  /* Take full width */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%;
+        height: auto;
         filter: opacity(0.5);
     }
 }
@@ -63,26 +63,23 @@ body {
     background: #777;
 }
 
-/* ---- Responsive Image Techniques ---- */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* ---- Background Image Adjustments ---- */
-.Background {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 /* ---- Mobile Responsiveness ---- */
 @media (max-width: 768px) {
-    //... your existing styles
+    .Content {
+        width: 90vw;
+        margin-right: 5vw;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
     .Background img {
         width: 100vw;
         height: calc(100vh - var(--header-height));
     }
-}
 
+    .sectionTitle {
+        font-size: 30px;
+    }
+}
