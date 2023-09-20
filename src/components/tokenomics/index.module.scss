@@ -1,9 +1,11 @@
 .container {
     padding: 40px 0;
+    display: flex;
+    justify-content: center;
 
     .content {
         @media (max-width: 768px) {
-            padding: 0 20px;  // Add some padding for mobile screens
+            padding: 0 20px;
         }
 
         .tiTable {
@@ -29,7 +31,7 @@
                         border: 1px solid white;
 
                         @media (max-width: 768px) {
-                            font-size: 16px;  // Increase font size for mobile readability
+                            font-size: 16px;
                         }
                     }
                 }
@@ -44,17 +46,17 @@
             a {
                 color: white;
                 text-decoration: none;
-                padding: 10px 20px;  // Increase padding for better touch target on mobile
+                padding: 10px 20px;
                 border-radius: 5px;
                 transition: background-color 0.3s ease;
 
                 &:hover {
                     text-decoration: underline;
-                    background-color: rgba(255, 255, 255, 0.1);  // Add a subtle hover effect
+                    background-color: rgba(255, 255, 255, 0.1);
                 }
 
                 @media (max-width: 768px) {
-                    font-size: 20px;  // Increase font size for mobile readability
+                    font-size: 20px;
                 }
             }
         }
