@@ -16,11 +16,10 @@ body {
 
 .section {
     display: flex;
-    flex-direction: column;
 }
 
 .left {
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
 }
 
 .sectionTitle {
@@ -31,7 +30,7 @@ body {
 .Content {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: calc(50vw - 85px);
     margin: var(--header-height) 5vw;
 }
 
@@ -66,12 +65,14 @@ img {
 }
 
 @media (max-width: 768px) {
-    .Content {
-        margin-right: 0;
+    .section {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .section {
-        align-items: center;
+    .Content {
+        width: 90vw;
+        margin-right: 5vw;
     }
 
     .Background img {
