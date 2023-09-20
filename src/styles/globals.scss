@@ -59,7 +59,21 @@ body {
     background: #777;
 }
 
-/* Mobile Responsiveness */
+/* ---- Responsive Image Techniques ---- */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---- Background Image Adjustments ---- */
+.Background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ---- Mobile Responsiveness ---- */
 @media (max-width: 768px) {
     .Content {
         width: 90vw;  /* Take up most of the viewport width on mobile */
