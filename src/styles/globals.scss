@@ -12,6 +12,7 @@ body {
     margin: auto;
     color: white;
     background-color: black;
+    padding-top: var(--header-height); /* Push content below fixed navbar */
 }
 
 .section {
@@ -41,12 +42,15 @@ body {
 
 .Background {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center; /* Center the content */
     align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     img {
-        width: calc(50vw - 5px);
-        height: auto;
+        width: 100%;  /* Take full width */
+        height: auto; /* Maintain aspect ratio */
         filter: opacity(0.5);
     }
 }
@@ -59,36 +63,26 @@ body {
     background: #777;
 }
 
-/* ---- Responsive Image Techniques ---- */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* ---- Background Image Adjustments ---- */
-.Background {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 /* ---- Mobile Responsiveness ---- */
 @media (max-width: 768px) {
+    body {
+        padding-top: calc(var(--header-height) * 1.5); /* Adjust body padding for mobile */
+    }
+
     .Content {
-        width: 90vw;  /* Take up most of the viewport width on mobile */
-        margin-right: 10px;  /* Reduce margin */
+        width: 90vw; /* Take up most of the viewport width on mobile */
+        margin-right: 10px; /* Reduce margin */
     }
 
     .Background img {
-        width: 90vw;  /* Adjust image width */
+        width: 100%; /* Adjust image width */
     }
 
     .section {
-        flex-direction: column;  /* Stack children vertically on mobile */
+        flex-direction: column; /* Stack children vertically on mobile */
     }
 
     .sectionTitle {
-        font-size: 30px;  /* Adjust title size for mobile */
+        font-size: 30px; /* Adjust title size for mobile */
     }
 }
