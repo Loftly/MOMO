@@ -1,7 +1,10 @@
+/* Phase Circle SCSS */
 .container {
     padding: 40px 0;
     display: flex;
     justify-content: center;
+    align-items: center; /* This will vertically center the content */
+    flex-direction: column; /* This ensures the content stacks vertically */
 
     .content {
         @media (max-width: 768px) {
@@ -10,6 +13,7 @@
 
         .tiTable {
             margin: 40px 0;
+            width: 100%; /* Ensuring it takes the full width */
 
             .header {
                 font-size: 20px;
@@ -20,6 +24,7 @@
             .content {
                 display: flex;
                 flex-direction: column;
+                justify-content: center; /* This will center the content horizontally */
 
                 .property {
                     display: grid;
@@ -42,23 +47,26 @@
             font-size: 25px;
             text-align: center;
             margin: 30px 0;
-
+        
             a {
-                color: white;
+                display: inline-block;  // Allows padding and other styles to be applied
+                color: var(--theme-color);  // Use the theme color
+                background-color: rgba(255, 255, 255, 0.1);  // Slight background for visibility
                 text-decoration: none;
                 padding: 10px 20px;
                 border-radius: 5px;
-                transition: background-color 0.3s ease;
-
+                transition: background-color 0.3s ease, transform 0.3s ease;
+        
                 &:hover {
-                    text-decoration: underline;
-                    background-color: rgba(255, 255, 255, 0.1);
+                    background-color: rgba(255, 255, 255, 0.2);  // Darker background on hover
+                    transform: translateY(-3px);  // Slight lift effect on hover
                 }
-
+        
                 @media (max-width: 768px) {
                     font-size: 20px;
                 }
             }
         }
+        
     }
 }

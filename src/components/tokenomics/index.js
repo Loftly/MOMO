@@ -68,10 +68,10 @@ export default function Tokenomics(){
                     </div>
                 ))}
                 <div className={Styles.whitePaper}>
-                    <a href='/Main_WP.pdf' target="_blank">Download white paper here!</a>
+                    <a href='/Main_WP.pdf' target="_blank">Official MOMO Whitepaper</a>
                 </div>
                 <div className={Styles.whitePaper}>
-                    <a href='/Technical_White_Paper.pdf' target="_blank">Download technical white paper here!</a>
+                    <a href='/Technical_White_Paper.pdf' target="_blank">Technical Whitepaper</a>
                 </div>
             </div>
         </div>
