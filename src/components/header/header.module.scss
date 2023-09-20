@@ -1,28 +1,80 @@
 .container {
-    // ... existing styles
-    .menuIcon {
-        display: none; // By default, the menu icon will be hidden.
-        font-size: 30px; // Adjust as per your requirement.
-        cursor: pointer;
-    }
-    // ... rest of your styles
-    @media (max-width: 768px) {
-        // ... existing styles
-        .menuIcon {
-            display: block; // Display the menu icon on smaller screens.
-        }
-        .navBar {
-            display: none; // By default, the navbar will be hidden on smaller screens.
-            flex-direction: column;
-            position: absolute;
-            top: var(--header-height);
-            right: 0;
-            background-color: var(--theme-secondary);
-            &.open {
-                display: flex; // When the menu is open, display the navbar.
+    position: static;
+    width: 100%;
+    background-color: var(--theme-secondary);
+    height: var(--header-height);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+    .content {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .avatar {
+            margin-left: 20px;
+            font-size: var(--header-font-1);
+
+            a {
+                text-decoration: none;
+                color: white;
             }
-            a, nav {
-                margin: 10px;
+        }
+
+        .navBar {
+            display: flex;
+            margin-right: 20px;
+
+            a {
+                text-decoration: none;
+
+                &:focus {
+                    outline: none;
+                    text-decoration: none;
+                }
+            }
+
+            nav {
+                font-size: var(--header-font-1);
+                margin: 0 15px;
+                cursor: pointer;
+                color: white;
+                padding: 5px;
+            }
+
+            .link {
+                border: 1px solid white;
+                padding: 5px 15px;
+                border-radius: 2rem;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            flex-direction: column;
+            padding: 5px;
+
+            .avatar {
+                font-size: calc(var(--header-font-1) * 0.8); // slightly reduce font size
+                margin-left: 10px;
+            }
+
+            .navBar {
+                margin-top: 5px;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                nav {
+                    margin: 5px;
+                }
+
+                .link {
+                    margin: 5px;
+                }
             }
         }
     }
