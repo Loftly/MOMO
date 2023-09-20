@@ -33,21 +33,26 @@ const phases = [
 ]
 
 export default function About(){
-    return <div className={[Styles.container, 'section'].join(' ')} id='roadmap'>
-        <div className='Background'>
-            <img src='/images/AdobeStock_564469033.jpeg'/>
-        </div>
-        <div className={['Content', Styles.content].join(' ')}>
-            <h1 className='sectionTitle'>Galactic Roadmap</h1>
-            {phases.map((phase, p) => (
+    return (
+        <div className={[Styles.container, 'section'].join(' ')} id='roadmap'>
+            <div className='Background'>
+                <img src='/images/AdobeStock_564469033.jpeg'/>
+            </div>
+            <div className={['Content', Styles.content].join(' ')}>
+                <h1 className='sectionTitle'>Galactic Roadmap</h1>
+                {phases.map((phase, p) => (
                     <div key={p} className={Styles.phase}>
-                        <div className={Styles.title}>
-                            <span>{phase.title}</span></div>
+                        <div className={Styles.title + (phase.title === "Phase Three" ? ` ${Styles.phaseThree}` : '')}>
+                            <span>{phase.title}</span>
+                        </div>
                         <div className={Styles.details}>
-                            <ul>{phase.objectives.map((obj, o) => <li key={o}>{obj}</li>)}</ul>
+                            <ul>
+                                {phase.objectives.map((obj, o) => <li key={o}>{obj}</li>)}
+                            </ul>
                         </div>
                     </div>
                 ))}
+            </div>
         </div>
-    </div>
+    );
 }
