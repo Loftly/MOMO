@@ -1,4 +1,4 @@
-.container{
+.container {
     position: fixed;
     width: 100%;
     background-color: var(--theme-secondary);
@@ -7,47 +7,74 @@
     display: flex;
     align-items: center;
 
-    .content{
+    .content {
         margin: auto;
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        .avatar{
+        .avatar {
             margin-left: 20px;
             font-size: var(--header-font-1);
+
             a {
                 text-decoration: none;
                 color: white;
             }
         }
-    
-        .navBar{
+
+        .navBar {
             display: flex;
             margin-right: 20px;
-            
-            a{
+
+            a {
                 text-decoration: none;
-    
-                &:focus{
+
+                &:focus {
                     outline: none;
                     text-decoration: none;
                 }
             }
-    
-            nav{
+
+            nav {
                 font-size: var(--header-font-1);
                 margin: 0 15px;
                 cursor: pointer;
                 color: white;
                 padding: 5px;
             }
-    
-            .link{
+
+            .link {
                 border: 1px solid white;
                 padding: 5px 15px;
                 border-radius: 2rem;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            flex-direction: column;
+            padding: 5px;
+
+            .avatar {
+                font-size: calc(var(--header-font-1) * 0.8); // slightly reduce font size
+                margin-left: 10px;
+            }
+
+            .navBar {
+                margin-top: 5px;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                nav {
+                    margin: 5px;
+                }
+
+                .link {
+                    margin: 5px;
+                }
             }
         }
     }
