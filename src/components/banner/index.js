@@ -5,7 +5,7 @@ import Styles from './index.module.scss'
 const links = [
     {
         src: "/icons/dextools_1.webp",
-        url: null
+        url: "https://www.dextools.io/app/en/ether/pair-explorer/0xdf168a2b6d71a85876b62212ccdd0cc46961b020"
     },
     {
         src: "/icons/etherscan.webp",

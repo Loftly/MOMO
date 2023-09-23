@@ -16,6 +16,9 @@ body {
 
 .section {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .left {
@@ -25,13 +28,18 @@ body {
 .sectionTitle {
     font-size: 40px;
     text-align: center;
+    width: 100%;
+}
+
+.Content, .Background {
+    flex: 1;
+    flex-basis: 50%;
+    min-width: 300px;
 }
 
 .Content {
     display: flex;
     flex-direction: column;
-    width: calc(50vw - 85px);
-    margin: var(--header-height) 5vw;
 }
 
 .Background {
@@ -41,7 +49,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
+    
     img {
         width: 100%;
         height: auto;
@@ -70,9 +78,12 @@ img {
         align-items: center;
     }
 
+    .Content, .Background {
+        flex-basis: 100%;
+    }
+
     .Content {
         width: 90vw;
-        margin-right: 5vw;
     }
 
     .Background img {
