@@ -15,7 +15,7 @@ const tokenomicsInfo = [
             },
             {
                 key: "Circulating Supply",
-                value: "1,000,000,000"
+                value: "394,800,000,000,000"
             },
             {
                 key: "Liquidity Lock",
