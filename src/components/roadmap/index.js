@@ -36,7 +36,10 @@ export default function About(){
     return (
         <div className={[Styles.container, 'section'].join(' ')} id='roadmap'>
             <div className='Background'>
-                <img src='/images/AdobeStock_564469033.jpeg'/>
+            <figure>
+                    <img src='/images/AdobeStock_564469033.jpeg'/>
+                    <figcaption>alienmemerun@gmail.com</figcaption>
+                </figure>
             </div>
             <div className={['Content', Styles.content].join(' ')}>
                 <h1 className='sectionTitle'>Galactic Roadmap</h1>
