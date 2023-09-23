@@ -3,8 +3,8 @@ import Styles from './index.module.scss';
 
 export default function Widget() {
     // Token Info
-    const tokenAddress = '0xBFFd4D255f9917030b1dC8843EbDAd531409c607';
-    const pairAddress = 'pairaddyher';
+    const tokenAddress = 'pairaddyhere';
+    const pairAddress = '0xBFFd4D255f9917030b1dC8843EbDAd531409c607';
 
     // Construct the Uniswap URL
     const uniswapUrl = `https://app.uniswap.org/#/swap?inputCurrency=${tokenAddress}&outputCurrency=${pairAddress}`;
