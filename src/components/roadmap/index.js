@@ -15,7 +15,7 @@ const phases = [
         title: "Phase Two | Solana",
         objectives: [
             "Achieve our first major market cap milestone ($500k Goal), proving the strength and conviction of the Martian community.",
-            "Roll out updates and tweaks based on community feedback, navigating the crypto asteroid field.",
+            "Airdrop community.",
             "Engage in partnerships and collaborations, enhancing the $MOMO ecosystem and expanding our intergalactic network.",
             "Introduce more incentives and reward mechanisms for holders, making the journey even more lucrative.",
             "Aim to grab the attention of Elon and SpaceX, establishing $MOMO's narrative in the broader space narrative.",
@@ -27,7 +27,7 @@ const phases = [
         objectives: [
             "Community Partnerships",
             "$1 Million Market Cap",
-            "Cross Chain Compatability",
+            "NFTs Rollout",
             "2000+ holders",
             "Merch/NFT Deployment, airdropped to the top 420 Martians"
         ]
