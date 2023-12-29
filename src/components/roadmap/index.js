@@ -2,32 +2,34 @@ import Styles from './index.module.scss'
 
 const phases = [
     {
-        title: "Phase One",
+        title: "Phase One | Ethereum",
         objectives: [
-            "Assemble a community of space enthusiasts, tech aficionados, and crypto believers.",
+            "Assemble a community of space enthusiasts, tech aficionados, and crypto believers on the ETH Chain.",
             "Launch the $MOMO token with unique tokenomics, ensuring fair distribution and a solid foundation.",
             "Get trending on X through mischevious memery and marketing tactics",
-            "1000+ holders"
+            "100+ Holders. Establish Strong Diamon Community Foundation",
+            "$50,000.00 MC"
         ]
     },
     {
-        title: "Phase Two",
+        title: "Phase Two | Solana",
         objectives: [
-            "Achieve our first major market cap milestone, proving the strength and conviction of the Martian community.",
+            "Achieve our first major market cap milestone ($500k Goal), proving the strength and conviction of the Martian community.",
             "Roll out updates and tweaks based on community feedback, navigating the crypto asteroid field.",
             "Engage in partnerships and collaborations, enhancing the $MOMO ecosystem and expanding our intergalactic network.",
             "Introduce more incentives and reward mechanisms for holders, making the journey even more lucrative.",
-            "Aim to grab the attention of Elon and SpaceX, establishing $MOMO's narrative in the broader space narrative."
+            "Aim to grab the attention of Elon and SpaceX, establishing $MOMO's narrative in the broader space narrative.",
+            "Grow our small ETH community into the SOL community, preparing for AVAX Launch."
         ]
     },
     {
-        title: "Phase Three",
+        title: "Phase Three | AVAX",
         objectives: [
             "Community Partnerships",
-            "Trending on DexTools, CoinMarketCap, etc",
+            "$1 Million Market Cap",
             "Cross Chain Compatability",
-            "20000+ holders",
-            "Merch/NFT Deployment, airdropped to the top 4,200 Martians"
+            "2000+ holders",
+            "Merch/NFT Deployment, airdropped to the top 420 Martians"
         ]
     },
 ]
@@ -38,7 +40,7 @@ export default function About(){
             <div className='Background'>
             <figure>
                     <img src='/images/AdobeStock_564469033.jpeg'/>
-                    <figcaption>alienmemerun@gmail.com</figcaption>
+                   // <figcaption>alienmemerun@gmail.com</figcaption>
                 </figure>
             </div>
             <div className={['Content', Styles.content].join(' ')}>
